@@ -1,1 +1,1 @@
-# Image-Generator---DEPI
+# Image-Generator-DEPI
