@@ -6,6 +6,15 @@ A deep learning project that fine-tunes Stable Diffusion XL (SDXL) for generatin
 
 This project uses the DreamBooth LoRA fine-tuning technique on Stable Diffusion XL to create a specialized image generator for Naruto-style anime characters. The model is trained on the lambdalabs/naruto-blip-captions dataset from Hugging Face.
 
+## Demo
+
+https://huggingface.co/spaces/AbdelrahmanGalhom/Naruto-Diffuser-FineTuned
+
+![Demo Video](Demo.mp4)
+
+You can try the model directly using our Hugging Face Space linked above, or check out the trained model at:
+https://huggingface.co/AbdelrahmanGalhom/diffusers-finetuned-naruto
+
 ## Features
 
 - Fine-tunes SDXL using LoRA adapters for efficient training
@@ -13,6 +22,7 @@ This project uses the DreamBooth LoRA fine-tuning technique on Stable Diffusion 
 - HuggingFace integration for model hosting and dataset access
 - Memory management optimizations for inference
 - Interactive visualization of the training dataset
+- Deployed demo on Hugging Face Spaces
 
 ## Project Structure
 
@@ -60,6 +70,13 @@ The notebook provides an end-to-end workflow:
 5. **Memory Management**: Utilities to clear CUDA memory between pipeline changes.
 
 6. **Inference**: Load the trained model and generate custom Naruto-style images from text prompts.
+
+## Using the Deployed Model
+
+You can easily generate Naruto-style images using:
+
+1. Our Hugging Face Space: [Naruto-Diffuser-FineTuned](https://huggingface.co/spaces/AbdelrahmanGalhom/Naruto-Diffuser-FineTuned)
+2. Directly with the model: [diffusers-finetuned-naruto](https://huggingface.co/AbdelrahmanGalhom/diffusers-finetuned-naruto)
 
 ## Example Prompts
 
