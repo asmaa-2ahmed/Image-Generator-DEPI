@@ -23,16 +23,26 @@ https://huggingface.co/AbdelrahmanGalhom/diffusers-finetuned-naruto
 - Memory management optimizations for inference
 - Interactive visualization of the training dataset
 - Deployed demo on Hugging Face Spaces
+- FastAPI implementation for serving images via REST API
 
 ## Project Structure
 
-- `notebook.ipynb`: Complete Jupyter notebook with:
-  - Dataset exploration and visualization
-  - Model training configuration
-  - SDXL LoRA fine-tuning process
-  - Memory management utilities
-  - Inference pipeline setup and testing
-- `train_dreambooth_lora_sdxl_advanced.py`: Training script downloaded during notebook execution
+- `docs/` 
+  - `Presentation.pptx`: Project presentation slides
+  - `Report.pdf`: Detailed project report
+- `src/`
+  - `assets/`: Contains image resources
+  - `config.py`: Configuration settings for the model
+  - `inference.py`: Image generation logic
+  - `schemas.py`: Data models for API requests/responses
+- `.env.example`: Example environment variables file
+- `.gitignore`: Git ignore rules
+- `Demo.mp4`: Video demonstration of the project
+- `DemoGif.gif`: Animated demo of the application
+- `main.py`: FastAPI application entry point
+- `notebook.ipynb`: Jupyter notebook with training code
+- `README.md`: Project documentation
+- `requirements.txt`: Project dependencies
 
 ## Setup Instructions
 
@@ -54,6 +64,28 @@ peft, dadaptation, prodigyopt, torchvision, python-slugify, diffusers
 ### Environment Setup
 
 The notebook configures accelerate automatically. No manual setup is needed beyond providing your Hugging Face token.
+
+## API Usage
+
+The project includes a FastAPI application that serves generated images:
+
+### Endpoints
+
+- `POST /generate`: Generate a new Naruto-style image from a text prompt
+  - Request body: JSON with prompt and configuration
+  - Returns: Image filename and path
+
+- `GET /image/{filename}`: Retrieve a previously generated image
+  - Path parameter: Image filename
+  - Returns: The image file
+
+### Running the API
+
+```bash
+uvicorn main:app --reload
+```
+
+Visit http://localhost:8000/docs to access the interactive API documentation.
 
 ## Usage Guide
 
