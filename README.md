@@ -10,7 +10,7 @@ This project uses the DreamBooth LoRA fine-tuning technique on Stable Diffusion 
 
 https://huggingface.co/spaces/AbdelrahmanGalhom/Naruto-Diffuser-FineTuned
 
-![Demo Video](Demo.mp4)
+![Demo](DemoGIF.gif)
 
 You can try the model directly using our Hugging Face Space linked above, or check out the trained model at:
 https://huggingface.co/AbdelrahmanGalhom/diffusers-finetuned-naruto
