@@ -55,15 +55,38 @@ To run this project, you need:
 3. Hugging Face account with API token
 4. Kaggle account with API token (for accessing secrets)
 
-The notebook will install all required dependencies automatically:
-```
-datasets, huggingface_hub, xformers, bitsandbytes, transformers, accelerate, 
-peft, dadaptation, prodigyopt, torchvision, python-slugify, diffusers
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/Image-Generator-DEPI.git
+cd Image-Generator-DEPI
 ```
 
-### Environment Setup
+2. Install dependencies using the requirements.txt file:
+```bash
+pip install -r requirements.txt
+```
 
-The notebook configures accelerate automatically. No manual setup is needed beyond providing your Hugging Face token.
+The requirements.txt includes all necessary dependencies:
+```
+datasets
+huggingface_hub
+xformers
+bitsandbytes
+transformers
+accelerate
+peft
+dadaptation
+prodigyopt
+torchvision
+python-slugify
+diffusers
+fastapi
+uvicorn
+pillow
+python-dotenv
+```
 
 ## API Usage
 
